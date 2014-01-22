@@ -1,0 +1,7 @@
+This is a template for creating Latex documents. 
+
+Good style includes splitting sections into directories, having an images folder etc.
+
+It also contains a Makefile that puts the result and temporary files into an output directory.
+
+In misc/packages.tex I have included some useful packages that I often use 
