@@ -5,8 +5,8 @@
 % For picture includes
 \usepackage{graphicx}
 
-% Used to set option H in figures
-\usepackage{float}
+% For centering all figures/captions without explicitly putting centering
+\usepackage{floatrow}
 
 % To wrap figures with text
 \usepackage{wrapfig}
@@ -17,39 +17,69 @@
 % For code snippets
 \usepackage{listings}
 
-% For figure placing
-\usepackage{float}
-
 %For fancy mathmode stuff (mathbb etc)
 \usepackage{amsfonts}
-
 
 %For useful math stuff like cases, align* etc
 \usepackage{amsmath}
 
 % For todos
+% To disable when creating pdf add disable to options
 \usepackage[colorinlistoftodos]{todonotes}
 
-% For subfigures and captions
-\usepackage{subfigure}
+% For subcaptions & subfigures
+\usepackage{subcaption, caption}
 
-% For new line instead of para indents
+% For new line instead of paragraph indents
 \usepackage[parfill]{parskip}
-
-% Todo
-\usepackage{todonotes}
 
 % To do nested enumerations
 \usepackage{enumitem}
 
 \usepackage{verbatim}
 
+% For tables that span multiple pages
+% \usepackage{longtable}
+
+
+% For code
+% \usepackage{listings}
+
+\usepackage{color}
+
+% For java colors
+% \definecolor{pblue}{rgb}{0.13,0.13,1}
+% \definecolor{pgreen}{rgb}{0,0.5,0}
+% \definecolor{pred}{rgb}{0.9,0,0}
+% \definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+
+% For defining code styles
+% \lstdefinestyle{java_colors}{ 
+%   showspaces=false,
+%   showtabs=false,
+%   breaklines=true,
+%   showstringspaces=false,
+%   breakatwhitespace=true,
+%   commentstyle=\color{pgreen},
+%   keywordstyle=\color{pblue},
+%   stringstyle=\color{pred},
+%   basicstyle=\ttfamily,
+%   moredelim=[il][\textcolor{pgrey}]{$$},
+%   moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%} 
+% }
+
+% Default listing styles
+% \lstset{
+%   breaklines=true
+% }
+
+
 % Formatting paragraphs as sections
-\usepackage{titlesec}
-\setcounter{secnumdepth}{4}
-\titleformat{\paragraph}
-{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
-\titlespacing*{\paragraph}
-{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+% \usepackage{titlesec}
+% \setcounter{secnumdepth}{4}
+% \titleformat{\paragraph}
+% {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+% \titlespacing*{\paragraph}
+% {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 
